@@ -97,8 +97,6 @@ _G.charSelect.character_get_current_table = nono
 _G.charSelect.character_get_current_number = nono
 _G.charSelect.character_get_number_from_string = nono
 _G.charSelect.character_get_voice = nono
-_G.charSelect.voice.sound = nono
-_G.charSelect.voice.snore = nono
 _G.charSelect.character_get_life_icon = nono
 _G.charSelect.character_get_star_icon = nono
 
