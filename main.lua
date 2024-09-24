@@ -1,5 +1,5 @@
 -- name: Hog Skin Selector 
--- description: X
+-- description: Another Character Select from the rest, yay!\Have this Cool Skin Selector in your hands, With this you can add Skin Mods or Make yours if you want.\nIts your choice bud.
 --Settings--
 local option = 1
 ref = {
