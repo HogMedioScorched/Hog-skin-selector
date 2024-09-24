@@ -125,7 +125,7 @@ end
 local E_MODEL_YOSHI_PLAYER = smlua_model_util_get_id("yoshi_player_geo")
 local E_MODEL_PEACH_PLAYER = smlua_model_util_get_id("peach_player_geo")
 local E_MODEL_KOOPA_PLAYER = smlua_model_util_get_id("koopa_player_geo")
-local curSelected = 1
+curSelected = 1
 skins = {
     {
         name = "Default"
