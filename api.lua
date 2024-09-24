@@ -10,6 +10,7 @@ function addSkin(name, info, credits, model, color)
         model = model,
         color = color
     }
+	return #skins
 end
 function editSkin(skin, name, info, credits, model, color)
 	local id = 0
@@ -65,6 +66,9 @@ end
 function getConfig(ref)
 	return options[ref]
 end
+local function getActualSkin()
+    return curSelected
+end
 _G.hogSkinSelectorLoaded = true
 _G.hogSkinSelector = {
 	--Functions--
@@ -77,6 +81,7 @@ _G.hogSkinSelector = {
 	},
     --Variables--
     getConfig = getConfig,
+    getActualSkin = getActualSkin
 }
 local function deluxetohss(name, description, credit, color, modelInfo, forceChar, lifeIcon, camScale)
     addSkin(name, description, credit, modelInfo, {color.r,color.g,color.b})
@@ -94,7 +99,7 @@ _G.charSelect.character_add_caps = nono
 _G.charSelect.character_add_celebration_star = nono
 _G.charSelect.character_add_palette_preset = nono
 _G.charSelect.character_get_current_table = nono
-_G.charSelect.character_get_current_number = nono
+_G.charSelect.character_get_current_number = getActualSkin
 _G.charSelect.character_get_number_from_string = nono
 _G.charSelect.character_get_voice = nono
 _G.charSelect.character_get_life_icon = nono
